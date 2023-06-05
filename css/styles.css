@@ -1,0 +1,638 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #434455;
+  background-color: #ffffff;
+}
+
+:root {
+  --brand-color: #2e2f42;
+}
+
+.list {
+  list-style: none;
+}
+
+.link,
+.page-logo,
+.footer-logo {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.description-first-word-page-logo {
+  color: var(--brand-color);
+}
+
+.page-logo {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  color: #4d5ae5;
+
+  /* identical to box height, or 117% */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 76px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.common-container {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.page-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+}
+
+.address-list {
+  display: flex;
+  align-items: center;
+  margin-left: 332px;
+}
+
+.menu-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  display: block;
+  line-height: 1.5;
+  padding: 24px 0;
+
+  /* identical to box height, or 150% */
+  letter-spacing: 0.02em;
+
+  /* NAVY BLUE */
+  color: var(--brand-color);
+}
+
+.menu-item,
+.link:active {
+  color: #9747ff;
+}
+
+.modal-open-button:hover,
+.modal-open-button:focus {
+  background-color: #404bbf;
+}
+
+.menu-item:hover,
+.menu-item:focus,
+.page-logo:hover,
+.page-logo:focus,
+.contacts:hover,
+.contacts:focus,
+.menu-link:hover,
+.menu-link:focus {
+  color: #404bbf;
+}
+
+.contact-information {
+  font-style: normal;
+  margin-left: auto;
+}
+
+.contacts-element {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+
+  /* identical to box height, or 150% */
+  letter-spacing: 0.02em;
+
+  /* SLATE */
+  color: #434455;
+}
+
+/* Перша секція. Головна інформація */
+
+.main-information {
+  background-color: var(--brand-color);
+  padding: 188px 0;
+  background-color: #2e2f42;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/people-office.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.main-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  max-width: 496px;
+
+  /* or 107% */
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+  letter-spacing: 0.02em;
+
+  /* WHITE */
+  color: #ffffff;
+}
+
+.button {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  background-color: #4d5ae5;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-open-button {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #4d5ae5;
+  min-width: 169px;
+  border: none;
+
+  /* identical to box height, or 150% */
+  display: block;
+  align-items: center;
+  letter-spacing: 0.04em;
+
+  /* WHITE */
+  color: #ffffff;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  /* Auto layout */
+  display: block;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px 32px;
+  gap: 10px;
+
+  left: 636px;
+  right: 635px;
+  top: 428px;
+  bottom: 188px;
+
+  /* IRIS */
+  background: #4d5ae5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+.modal-open-button-all {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #4d5ae5;
+  background-color: #f4f4fd;
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+}
+
+.modal-open-button-all:hover,
+.modal-open-button-all:focus {
+  color: #ffffff;
+  background-color: #404bbf;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+/* Друга секція. Основні принципи */
+
+.container-principles {
+  padding: 120px 0;
+}
+
+.title-essence-principles {
+  width: calc((100% - 72px) / 4);
+}
+
+.title-essence-principles-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 264px;
+  height: 112px;
+  margin-bottom: 8px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+}
+
+.summary {
+  display: flex;
+  gap: 24px;
+}
+
+.principles {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 8px;
+
+  /* identical to box height, or 120% */
+  letter-spacing: 0.02em;
+
+  /* NAVY BLUE */
+  color: var(--brand-color);
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.principles-description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+
+  /* or 150% */
+  letter-spacing: 0.02em;
+
+  /* SLATE */
+  color: #434455;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+/* Третя секція. Що ми робимо */
+
+.our-work {
+  padding-bottom: 120px;
+}
+
+.our-work-images {
+  background-color: #ffffff;
+  width: calc((100% - 48px) / 3);
+}
+
+/* Четверта секція. Працівники */
+
+.our-team-description {
+  background-color: #f4f4fd;
+  padding: 120px 0;
+}
+
+.section-description {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  margin-bottom: 72px;
+
+  /* identical to box height, or 111% */
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+
+  /* NAVY BLUE */
+  color: var(--brand-color);
+}
+
+.our-team-description-list {
+  display: flex;
+  gap: 24px;
+}
+
+.our-team-identification {
+  background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.person-information {
+  padding: 32px 0;
+}
+
+.name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 8px;
+
+  /* identical to box height, or 120% */
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  /* NAVY BLUE */
+  color: var(--brand-color);
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.position {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+
+  /* identical to box height, or 150% */
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  /* SLATE */
+  color: #434455;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin-bottom: 8px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.social-list-item {
+  width: 40px;
+  height: 40px;
+}
+
+.social-list-link,
+.social-media-list-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: #404bbf;
+}
+
+.social-list-icon {
+  fill: #f4f4fd;
+}
+
+/* П'ята секція. Клієнти */
+
+.our-customers {
+  padding: 120px 0;
+}
+
+.icons-customers {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.icons-customers-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 88px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #8e8f99;
+}
+
+.icons-customers-link:hover,
+.icons-customers-link:focus {
+  border-color: #404bbf;
+  color: #404bbf;
+}
+
+.icons-customers-view {
+  fill: currentColor;
+}
+
+/* Підвал сторінки */
+
+.footer {
+  display: flex;
+  align-items: baseline;
+}
+
+.under-logo-and-slogan {
+  background-color: var(--brand-color);
+  padding: 100px 0;
+}
+
+.footer-logo-container {
+  margin-right: 120px;
+  padding-left: 156px;
+}
+
+.footer-logo {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  color: #4d5ae5;
+  margin-bottom: 16px;
+
+  /* identical to box height, or 117% */
+  display: inline-block;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.description-first-word-under-logo {
+  color: #f4f4fd;
+}
+
+.footer-description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: var(--brand-color);
+  max-width: 264px;
+
+  /* or 150% */
+  letter-spacing: 0.02em;
+
+  /* CLOUD */
+  color: #f4f4fd;
+}
+
+.social-media {
+  display: block;
+}
+
+.title-social-media {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.social-media-list {
+  display: flex;
+  gap: 16px;
+}
+
+.social-media-list-item {
+  width: 40px;
+  height: 40px;
+}
+
+.social-media-list-link:hover,
+.social-media-list-link:focus {
+  background-color: #31d0aa;
+}
+
+.social-list-icon {
+  fill: #f4f4fd;
+}
+
+/* Портфоліо */
+
+.contacts {
+  display: flex;
+  gap: 40px;
+}
+
+.img-description {
+  padding: 96px 0 120px;
+}
+
+.button-type {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+
+.modal-open-button-all:hover,
+.modal-open-button-all:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.icons-item {
+  width: calc((100% - 48px) / 3);
+  list-style: none;
+}
+
+.review {
+  display: block;
+}
+
+.review:hover,
+.review:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.app-name {
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  padding: 32px 16px;
+}
+
+.icons-description {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--brand-color);
+  margin-bottom: 8px;
+}
+
+.icons-type {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
