@@ -137,6 +137,41 @@ img {
   color: #404bbf;
 }
 
+.first-line,
+.second-line {
+  display: flex;
+  align-items: center;
+}
+
+.first-line::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 48px;
+  height: 4px;
+  top: 44px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  margin-top: 20px;
+}
+
+.second-line::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 66px;
+  height: 4px;
+  top: 44px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  margin-top: 20px;
+  }
+
+.first-line:hover::after,
+.second-line:hover::after {
+  background-color: #404bbf;
+} 
+
 .contact-information {
   font-style: normal;
   margin-left: auto;
@@ -585,9 +620,24 @@ img {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background: #FCFCFC;
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 4px;
+  background: #fcfcfc;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 19px;
+  right: 24px;
+  background-color: transparent;
+  border: none;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 /* Портфоліо */
