@@ -143,6 +143,7 @@ img {
   align-items: center;
   position: relative;
   color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .first-line::after {
@@ -177,12 +178,16 @@ img {
   overflow: auto;
   transform: translateY(100%);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+}
 
 .first-line:hover::after,
 .second-line:hover::after {
   transform: translateY(0%);
-} 
+}
+
+.contacts-item {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .contact-information {
   font-style: normal;
@@ -244,7 +249,6 @@ img {
   background-color: #4d5ae5;
   border-radius: 4px;
   cursor: pointer;
-
 }
 
 .modal-open-button {
@@ -287,27 +291,6 @@ img {
   border-radius: 4px;
   margin: 0 auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-open-button-all {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #4d5ae5;
-  background-color: #f4f4fd;
-  padding: 12px 24px;
-  border: 1px solid #e7e9fc;
-  border-radius: 4px;
-}
-
-.modal-open-button-all:hover,
-.modal-open-button-all:focus {
-  color: #ffffff;
-  background-color: #404bbf;
-  cursor: pointer;
-  border: 1px solid transparent;
 }
 
 /* Друга секція. Основні принципи */
@@ -484,7 +467,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-link:hover,
@@ -518,7 +501,8 @@ img {
   border-radius: 4px;
   background-color: #ffffff;
   color: #8e8f99;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icons-customers-link:hover,
@@ -627,28 +611,45 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
   position: absolute;
   width: 408px;
-  height: 584px;
+  min-height: 584px;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1); 
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .modal-close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  top: 19px;
+  top: 24px;
   right: 24px;
-  background-color: transparent;
+  width: 24px; 
+  height: 24px;
+  border-radius: 50%;
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  background-color: #404bbf; 
   border: none;
+  fill: #ffffff;
 }
 
 .is-hidden {
@@ -656,6 +657,10 @@ img {
   visibility: hidden;
   pointer-events: none;
 }
+
+.modal-close-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} 
 
 /* Портфоліо */
 
@@ -675,8 +680,28 @@ img {
   margin-bottom: 72px;
 }
 
+.modal-open-button-all {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #4d5ae5;
+  background-color: #f4f4fd;
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .modal-open-button-all:hover,
 .modal-open-button-all:focus {
+  color: #ffffff;
+  background-color: #404bbf;
+  cursor: pointer;
+  border: 1px solid transparent;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -695,6 +720,7 @@ img {
 
 .review {
   display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .review:hover,
@@ -714,7 +740,10 @@ img {
   position: absolute;
   width: 100%;
   height: 100%;
-  padding: 40px 32px 164px 32px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  padding: 40px 32px;
   top: 0;
   left: 0;
   overflow: auto;
@@ -723,7 +752,7 @@ img {
 }
 
 .review:hover .overlay,
-.review:focus .overlay _ {
+.review:focus .overlay {
   transform: translateY(0%);
 }
 
